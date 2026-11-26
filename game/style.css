@@ -1,0 +1,27 @@
+/* Sky Courier: the page is just the canvas, full-viewport, no scroll. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #0b1622;
+  /* The page is a game, not a document: no text selection, no tap flash. */
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#game {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+#noscript {
+  color: #dfe9f2;
+  font: 16px system-ui, sans-serif;
+  text-align: center;
+  padding: 2em;
+}
